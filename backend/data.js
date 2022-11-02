@@ -17,7 +17,7 @@ const data = {
             slug: ' Book World Design',
             category: 'Love',
             price: 130,
-            countInStock: 10,
+            countInStock: 0,
             image: '/images/WOrld.jpg',
             By: 'suryam02',
             rating: 4.4,
