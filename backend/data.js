@@ -1,6 +1,7 @@
 const data = {
     products: [
         {
+            _id: '1',
             name: 'Beauty of Nature',
             slug: ' Beauty of nature  ART',
             category: 'Nature',
@@ -13,6 +14,7 @@ const data = {
             Decription: 'It  realize how wonder the nature is'
         },
         {
+            _id: '2',
             name: 'Beauty of Nature',
             slug: ' Book World Design',
             category: 'Love',
@@ -25,6 +27,7 @@ const data = {
             Decription: 'It  realize how wonder the nature is'
         },
         {
+            _id: '3',
             name: 'Beauty of Nature',
             slug: ' Patterns',
             category: '3d',
@@ -37,6 +40,7 @@ const data = {
             Decription: 'It  realize how wonder the nature is'
         },
         {
+            _id: '4',
             name: 'Art of a Girl',
             slug: 'Art of a Girl',
             category: 'world',
