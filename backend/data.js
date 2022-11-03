@@ -1,57 +1,77 @@
+import bcrypt from 'bcryptjs';
+
 const data = {
+  users: [
+    {
+      name: 'suryam',
+      email: 'admin@example.com',
+      password: bcrypt.hashSync('123456'),
+      isAdmin: true,
+    },
+    {
+      name: 'John',
+      email: 'jhon@example.com',
+      password: bcrypt.hashSync('123456'),
+      isAdmin: false,
+    },
+  ],
     products: [
-        {
-            _id: '1',
-            name: 'Beauty of Nature',
-            slug: ' Beauty of nature  ART',
-            category: 'Nature',
-            price: 130,
-            countInStock: 10,
-            image: '/images/5936217-HSC00002-25.jpg',
-            By: 'suryam01',
-            rating: 4.4,
-            numReviews: 3,
-            Decription: 'It  realize how wonder the nature is'
-        },
-        {
-            _id: '2',
-            name: 'Beauty of Nature',
-            slug: ' Book World Design',
-            category: 'Love',
-            price: 130,
-            countInStock: 0,
-            image: '/images/WOrld.jpg',
-            By: 'suryam02',
-            rating: 4.4,
-            numReviews: 3,
-            Decription: 'It  realize how wonder the nature is'
-        },
-        {
-            _id: '3',
-            name: 'Beauty of Nature',
-            slug: ' Patterns',
-            category: '3d',
-            price: 130,
-            countInStock: 10,
-            image: '/images/index.jpg',
-            By: 'suryam03',
-            rating: 4.4,
-            numReviews: 3,
-            Decription: 'It  realize how wonder the nature is'
-        },
-        {
-            _id: '4',
-            name: 'Art of a Girl',
-            slug: 'Art of a Girl',
-            category: 'world',
-            price: 130,
-            countInStock: 10,
-            image: '/images/giftguidetile.jpg',
-            By: 'suryam04',
-            rating: 4.4,
-            numReviews: 3,
-            Decription: 'It  realize how wonder the nature is'
-        },
+      {
+        
+        //_id: '1',
+        name: 'Nike Slim shirt',
+        slug: 'nike-slim-shirt',
+        category: 'Shirts',
+        image: '/images/giftguidetile.jpg', // 679px × 829px
+        price: 120,
+        countInStock: 10,
+        brand: 'Nike',
+        rating: 4.5,
+        numReviews: 10,
+        description: 'high quality shirt',
+      },
+      {
+        
+        //_id: '2',
+        name: 'Adidas Fit Shirt',
+        slug: 'adidas-fit-shirt',
+        category: 'Shirts',
+        image: '/images/5936217-HSC00002-25.jpg',
+        price: 250,
+        countInStock: 0,
+        brand: 'Adidas',
+        rating: 4.0,
+        numReviews: 10,
+        description: 'high quality product',
+      },
+      {
+       
+        //_id: '3',
+        name: 'Nike Slim Pant',
+        slug: 'nike-slim-pant',
+        category: 'Pants',
+        image: '/images/World.jpg',
+        price: 25,
+        countInStock: 15,
+        brand: 'Nike',
+        rating: 4.5,
+        numReviews: 14,
+        description: 'high quality product',
+      },
+      {
+        
+        //_id: '4',
+        name: 'Adidas Fit Pant',
+        slug: 'adidas-fit-pant',
+        category: 'Pants',
+        image: '/images/indexjpg',
+        price: 65,
+        countInStock: 5,
+        brand: 'Puma',
+        rating: 4.5,
+        numReviews: 10,
+        description: 'high quality product',
+      },
     ],
-};
-export default data;
+  };
+  export default data;
